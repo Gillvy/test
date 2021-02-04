@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+.container {
+  display: flex;
+  flex-direction: row;
+}
+.col {
+  /* background-color: pink; */
+  border-style: solid;
+  border-width: 1px;
+}

@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="col" style="width: 200px">
+    <input #mInput (change)="onChange(mInput.value, mSelect.value)" />
+  </div>
+  <div class="col" style="flex: 1">
+    <select #mSelect (change)="onChange(mInput.value, mSelect.value)">
+      <option value="isPrime">isPrime</option>
+      <option value="isFibo">isFibonacci</option>
+    </select>
+  </div>
+  <div class="col" style="width: 300px" id="result"></div>
+</div>
+<router-outlet></router-outlet>
