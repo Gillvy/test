@@ -28,7 +28,9 @@ export class AppComponent {
     return false;
   }
 
-  onChange(input, select) {
+  onChange(_input, select) {
+    var a = Math.abs(_input);
+    var input = Math.round(a);
     switch (select) {
       case 'isPrime':
         document.getElementById('result').innerHTML = this.isPrime(input) + ' ';
